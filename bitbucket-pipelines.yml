@@ -1,0 +1,16 @@
+# This is a sample build configuration for Docker.
+# Check our guides at https://confluence.atlassian.com/x/O1toN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: pijzl/vuejs-docker-unit-e2e
+
+pipelines:
+  default:
+    - step:
+        services:
+          - docker
+        script: # Modify the commands below to build your repository.
+          - docker exec vuejs-docker-unit-e2e sh -c "cd my-vue-project && yarn"
+          - docker exec vuejs-docker-unit-e2e sh -c "cd my-vue-project && yarn test:unit && yarn test:e2e"
+
