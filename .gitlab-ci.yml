@@ -1,0 +1,14 @@
+image: pijzl/vuejs-docker-unit-e2e
+
+before_script:
+  - cd my-vue-project
+  - yarn
+
+stages:
+  - test
+
+test_steps:
+  stage: test
+  script:
+    - yarn test:unit
+    - yarn test:e2e
