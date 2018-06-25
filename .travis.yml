@@ -1,0 +1,18 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t pijzl/vuejs-docker-unit-e2e:latest .
+  - docker run -d -p 8080:8080 -v "$PWD":"$PWD" -w "$PWD" --name "vuejs-docker-unit-e2e" -it pijzl/vuejs-docker-unit-e2e:latest
+  - docker ps -a
+  - docker exec -it vuejs-docker-unit-e2e sh
+
+script:
+  - cd my-vue-project
+  - yarn
+  - yarn test:unit
+  - yarn test:e2e
