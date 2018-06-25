@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e.svg?branch=master)](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e)
+
 # This is the docker image that design for VueJs project.
 
 # Why should you use docker for front-end development?
