@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e.svg?branch=master)](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e)
+[![Build Status](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e.svg?branch=master)](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e) [Bitbucket pipeline](https://bitbucket.org/pi-jzl/vuejs-docker-unit-e2e/addon/pipelines/home#!/)
 
 # This is the docker image that design for VueJs project.
 
