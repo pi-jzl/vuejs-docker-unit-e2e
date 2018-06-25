@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: pijzl/vuejs-docker-unit-e2e
+image: pijzl/vuejs-docker-unit-e2e:latest
 
 pipelines:
   default:
@@ -11,6 +11,7 @@ pipelines:
         services:
           - docker
         script: # Modify the commands below to build your repository.
+          - docker run -d -p 8080:8080 -v "$PWD":"$PWD" -w "$PWD" --name "vuejs-docker-unit-e2e" -it pijzl/vuejs-docker-unit-e2e:latest
           - docker exec vuejs-docker-unit-e2e sh -c "cd my-vue-project && yarn"
           - docker exec vuejs-docker-unit-e2e sh -c "cd my-vue-project && yarn test:unit && yarn test:e2e"
 
