@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e.svg?branch=master)](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e)
-Gitlab[![pipeline status](https://gitlab.com/pi-jzl/vuejs-docker-unit-e2e/badges/master/pipeline.svg)](https://gitlab.com/pi-jzl/vuejs-docker-unit-e2e/commits/master)
-[Bitbucket CI](https://bitbucket.org/pi-jzl/vuejs-docker-unit-e2e/addon/pipelines/home#!/)
+[![Docker Build Status](https://img.shields.io/docker/build/pijzl/vuejs-docker-unit-e2e.svg)](https://hub.docker.com/r/pijzl/vuejs-docker-unit-e2e/) Docker
+[![Build Status](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e.svg?branch=master)](https://travis-ci.org/pi-jzl/vuejs-docker-unit-e2e) Github
+[![pipeline status](https://gitlab.com/pi-jzl/vuejs-docker-unit-e2e/badges/master/pipeline.svg)](https://gitlab.com/pi-jzl/vuejs-docker-unit-e2e/commits/master) Gitlab
+[![pipeline status](https://img.shields.io/bitbucket/pipelines/pi-jzl/vuejs-docker-unit-e2e.svg)](https://bitbucket.org/pi-jzl/vuejs-docker-unit-e2e/addon/pipelines/home#!/) Bitbucket
 
 # This is the docker image that design for VueJs project.
 
